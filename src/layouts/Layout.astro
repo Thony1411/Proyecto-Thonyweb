@@ -1,3 +1,7 @@
+---
+import Navbar from "../components/Navbar.astro";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,13 +12,10 @@
 		<title>Thonyg</title>
 	</head>
 	<body>
-		<header>
-			Aqui va el menú
-		</header>
+		<Navbar />
 
 		<slot />
 
 		<footer>Aqui va el pie de pagina</footer>
 	</body>
 </html>
-
