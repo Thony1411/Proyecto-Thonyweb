@@ -1,7 +1,22 @@
 ---
+import Tarjeta2 from "../components/Tarjeta2.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    Esta es la ruta de Precios
+    <Tarjeta2 
+        planname="Plan Basico" 
+        description="Para emprededores individuales" 
+        price="USD 10"
+    />
+    <Tarjeta2 
+        planname="Plan Avanzado" 
+        description="Para negocios a escala" 
+        price="USD 20"
+    />
+    <Tarjeta2 
+        planname="Plan Plus" 
+        description="Para negocios complejos" 
+        price="USD 30"
+    />
 </Layout>

@@ -1,12 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Jumpbotron from "../components/Jumpbotron.astro";
+import Tarjeta1 from "../components/Tarjeta1.astro";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
 	<Jumpbotron />
-
-	 Esta es la ruta inicial
+	<Tarjeta1
+		title="Comienza con rapidez " 
+		description=" Un breve texto de de la primera tarjeta"
+	/>
+	<Tarjeta1
+		title="Crece todo lo que quieras " 
+		description=" Un breve texto de de la segunda tarjeta"
+	/>
+	<Tarjeta1
+		title="Aumenta tus expectativas " 
+		description=" Un breve texto de de la terceratarjeta"
+	/>
 </Layout>

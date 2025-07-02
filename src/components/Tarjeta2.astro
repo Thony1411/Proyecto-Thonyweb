@@ -1,14 +1,24 @@
+---
+interface Props {
+
+    planname: string; 
+    description: string; 
+    price: string;
+}
+
+const { planname, description, price } = Astro.props
+---
 <div>
     <p>USD 1 al mes</p>
     <div>
         <div>
-            <h1>Plan</h1>
+            <h1>{ planname }</h1>
             <p>Mas Popular</p>
         </div>
-        <p>Incluye todo lo que necesitas para empezar a vender en linea</p>
+        <p>{ description }</p>
 
         <p>A partir de</p>
-        <p>USD 1111</p>
+        <h2>{ price }</h2>
     </div>
     <div>
         <ul>

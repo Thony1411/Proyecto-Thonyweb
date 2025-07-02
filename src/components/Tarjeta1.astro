@@ -1,11 +1,15 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    
+}
+const { title, description} = Astro.props
+---
 <div>
-    <img src="" alt="">
+    <img src= alt="">
     <div>
-        <h2> Ttulo de tarjeta</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatibus, cumque, quibusdam, voluptates. Quisquam voluptatibus,
-            cumque, quibusdam, voluptates.
-        </p>/
+        <h2> { title } </h2>
+        <p> { description } </p>
     </div>
 </div>
