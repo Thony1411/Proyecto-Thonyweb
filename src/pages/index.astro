@@ -1,23 +1,31 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Jumpbotron from "../components/Jumpbotron.astro";
-import Tarjeta1 from "../components/Tarjeta1.astro";
+import TarjetaIndex from "../components/Tarjeta_index.astro";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
 	<Jumpbotron />
-	<Tarjeta1
-		title="Comienza con rapidez " 
-		description=" Un breve texto de de la primera tarjeta"
-	/>
-	<Tarjeta1
-		title="Crece todo lo que quieras " 
-		description=" Un breve texto de de la segunda tarjeta"
-	/>
-	<Tarjeta1
-		title="Aumenta tus expectativas " 
-		description=" Un breve texto de de la terceratarjeta"
-	/>
+	<div>
+		<div>
+			<TarjetaIndex
+				title="Comienza con rapidez "
+				description=" Megan Bre Camp, vendedora en solitario, puso en marcha Summer Solace Tallow para vender sus velas y productos para el cuidado de la piel orgánicos tanto online como en mercados locale"
+				imgURL="/4ce35eba1e546a23ff875c3eba8b5705.avif"
+			/>
+			<TarjetaIndex
+				title="Crece todo lo que quieras "
+				description=" La marca de atletismo Gymshark pasó de trabajar en un garaje a convertirse en la empresa mundial que es hoy, con más de US$500 millones en ventas anuales."
+				imgURL="/2083b4178afc5db338c7d6081f8a5838.webp"
+			/>
+			<TarjetaIndex
+				title="Aumenta tus expectativas "
+				description=" Con la ayuda de Shopify para empresas, Mattel vende sus icónicos juguetes directamente a clientes en todo el mundo."
+				imgURL="/7c3d68ca99f2f743df8cb1187bbd2cb1.webp"
+			/>
+		</div>
+		<button>Elige un plan que se adapte a tus necesidades</button>
+	</div>
 </Layout>

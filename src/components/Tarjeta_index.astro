@@ -2,12 +2,12 @@
 interface Props {
     title: string;
     description: string;
-    
+    imgURL: string;
 }
-const { title, description} = Astro.props
+const { title, description, imgURL} = Astro.props
 ---
 <div>
-    <img src= alt="">
+    <img src={ imgURL } alt="">
     <div>
         <h2> { title } </h2>
         <p> { description } </p>
