@@ -3,14 +3,14 @@
         <h1>Tu negocio puede ser un exito rotundo</h1>
     </div>
     <div class="boton">
-        <div class="">
+        <div class="text">
             <div>
                 <p>
                     Con nuestra plataforma, puedes crear tu tienda en linea y
                     vender tus productos de manera facil y rapida.
                 </p>
             </div>
-            <div>
+            <div class="botones">
                 <button class="gratis">Comienza Gratis</button>
                 <button class="planes">Ver Planes</button>
             </div>
@@ -39,7 +39,7 @@
         border-radius: 30px;
         background-color: black;
         color: white;
-        
+        border: transparent 2px;
     }
     button.gratis{
         background-color: white;
@@ -47,5 +47,10 @@
     }
     button.planes{
        border: solid;
+    }
+    div.text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
 </style>
