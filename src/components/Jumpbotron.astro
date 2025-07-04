@@ -1,9 +1,9 @@
-<div>
+<div class="jumpbotron">
     <div>
         <h1>Tu negocio puede ser un exito rotundo</h1>
     </div>
-    <div>
-        <div>
+    <div class="boton">
+        <div class="">
             <div>
                 <p>
                     Con nuestra plataforma, puedes crear tu tienda en linea y
@@ -11,10 +11,41 @@
                 </p>
             </div>
             <div>
-                <button>Comienza Gratis</button>
-                <button>Ver Planes</button>
+                <button class="gratis">Comienza Gratis</button>
+                <button class="planes">Ver Planes</button>
             </div>
         </div>
         <button>Por que creemos Shopify</button>
     </div>
 </div>
+
+<style>
+    .jumpbotron {
+        background-image: url('/');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: black;
+        padding: 120px 60px;
+        color: white;
+    }
+    .boton{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    button{
+        padding: 12px;
+        border-radius: 30px;
+        background-color: black;
+        color: white;
+        
+    }
+    button.gratis{
+        background-color: white;
+        color: black;
+    }
+    button.planes{
+       border: solid;
+    }
+</style>
