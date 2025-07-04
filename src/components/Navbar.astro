@@ -3,21 +3,53 @@ import { Icon } from "astro-icon/components";
 ---
 
 <header>
-    <nav>
-        <div>
-            <a href="/"><Icon name="logos:shopify" width="56" height="56" /> </a>
-            <ul>
+    <nav class="barra">
+        <div class="logo">
+            <a href="/"
+                ><Icon name="logos:shopify" width="56" height="56" />
+            </a>
+            <ul class="enlaces">
                 <li><a href="/solutions">Soluciones</a></li>
                 <li><a href="/prices">Precios</a></li>
                 <li><a href="/resources">Recursos</a></li>
             </ul>
         </div>
-        <div>
-            <! -- Falta la barra de busqueda -->
-            <div>
-                <button>Iniciar Sesion</button>
-                <button>Comienza Gratis</button>
-            </div>
+        <div class="botones">
+            <button class="login">Iniciar Sesion</button>
+            <button>Comienza Gratis</button>
         </div>
     </nav>
 </header>
+
+<style>
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    .barra {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 60px;
+        background-color: white;
+    }
+    .enlaces {
+        display: flex;
+        gap: 24px;
+    }
+    .enlaces a {
+        font-weight: 600;
+    }
+    .botones button{
+        background-color: black;
+        color: white;
+        padding: 12px;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+    .botones button.login {
+        background-color: white;
+        color: black;
+    }
+</style>

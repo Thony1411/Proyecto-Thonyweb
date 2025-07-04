@@ -1,15 +1,21 @@
 ---
+
+import { Icon } from 'astro-icon/components';
+
+
 interface Props {
-    subtitulo: string;
-    descrition: string;
-    imgURL: string;
+    subtitulo: string
+    descrition: string
+    // imgURL: string
+    iconName: string
 }
 
-const { subtitulo, descrition, imgURL } = Astro.props;
+const { subtitulo, descrition, iconName } = Astro.props;
 ---
 
 <div>
-    <img src={imgURL} />
+    <!-- <img src={imgURL} /> -->
+    <Icon name={iconName} />
     <div>
         <p>{subtitulo}</p>
         <p>{descrition}</p>
