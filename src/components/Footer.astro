@@ -1,23 +1,45 @@
 ---
 import { Icon } from "astro-icon/components";
 ---
-<footer>
-    <div>
-        <Icon name="logos:shopify" width="56" height="56" />
-        <div>
+<footer class="footer">
+     <Icon name="logos:shopify" width="56" height="56" />
+     <div class="lista">
+        <div class="seccion">
             <div>
                 <h2>Shopify</h2>
             </div>
-            <a href="">Acerca de nosotros</a>
-            <a href="">Planes</a>
+            <ul>
+                <li><a href="">Acerca de nosotros</a></li>
+                <li><a href="">Planes</a></li>
+            </ul>
         </div>
-        <div>
+        <div class="seccion">
             <div>
                 <h2>Soluciones</h2>
             </div>
-            <a href="">Creador de sitios web</a>
-            <a href="">Creador de tieda online</a>
+            <ul>
+                <li><a href="">Creador de sitios web</a></li>
+                <li><a href="">Creador de tieda online</a></li>
+            </ul>
         </div>
     </div>
 
 </footer>
+
+<style>
+.footer{
+    padding: 30px;
+    display: flex;
+    gap: 36px;
+    background-color: black;
+    color: white;
+}
+.lista {
+    display: flex;
+    gap: 36px;
+}
+a{
+    color: white;
+    
+}
+</style>
