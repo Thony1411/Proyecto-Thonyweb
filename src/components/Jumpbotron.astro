@@ -1,27 +1,30 @@
 <div class="jumpbotron">
     <div>
-        <h1>Tu negocio puede ser un exito rotundo</h1>
+        <h1>Tu negocio puede ser <br /> un exito rotundo</h1>
     </div>
-    <div class="boton">
-        <div class="text">
-            <div>
-                <p>
-                    Con nuestra plataforma, puedes crear tu tienda en linea y
-                    vender tus productos de manera facil y rapida.
-                </p>
-            </div>
+    <div class="text">
+        <div>
+            <p>
+                Sueña en grande, <br />construye rápido y llega <br /> lejos con
+                Shopify.
+            </p>
+        </div>
+        <div class="boton">
             <div class="botones">
                 <button class="gratis">Comienza Gratis</button>
                 <button class="planes">Ver Planes</button>
             </div>
+            <button>Por que creemos Shopify</button>
         </div>
-        <button>Por que creemos Shopify</button>
     </div>
 </div>
 
 <style>
     .jumpbotron {
-        background-image: url('/');
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        background-image: url("/");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -29,28 +32,33 @@
         padding: 120px 60px;
         color: white;
     }
-    .boton{
+    .text {
         display: flex;
-        justify-content: space-between;
-    
+        flex-direction: column;
+        gap: 12px;
     }
-    button{
+    button {
         padding: 12px;
         border-radius: 30px;
         background-color: black;
         color: white;
         border: transparent 2px;
+        font-weight: 700;
     }
-    button.gratis{
+    button.gratis {
         background-color: white;
         color: black;
     }
-    button.planes{
-       border: solid;
+    button.planes {
+        border: solid 2px;
     }
     div.text {
         display: flex;
         flex-direction: column;
         gap: 24px;
+    }
+    div.boton {
+        display: flex;
+        justify-content: space-between;
     }
 </style>

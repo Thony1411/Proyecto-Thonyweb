@@ -8,24 +8,79 @@ import TarjetaIndex from "../components/Tarjeta_index.astro";
 
 <Layout>
 	<Jumpbotron />
-	<div>
-		<div>
-			<TarjetaIndex
-				title="Comienza con rapidez "
-				description=" Megan Bre Camp, vendedora en solitario, puso en marcha Summer Solace Tallow para vender sus velas y productos para el cuidado de la piel orgánicos tanto online como en mercados locale"
-				imgURL="/4ce35eba1e546a23ff875c3eba8b5705.avif"
-			/>
-			<TarjetaIndex
-				title="Crece todo lo que quieras "
-				description=" La marca de atletismo Gymshark pasó de trabajar en un garaje a convertirse en la empresa mundial que es hoy, con más de US$500 millones en ventas anuales."
-				imgURL="/2083b4178afc5db338c7d6081f8a5838.webp"
-			/>
-			<TarjetaIndex
-				title="Aumenta tus expectativas "
-				description=" Con la ayuda de Shopify para empresas, Mattel vende sus icónicos juguetes directamente a clientes en todo el mundo."
-				imgURL="/7c3d68ca99f2f743df8cb1187bbd2cb1.webp"
-			/>
+	<div class="tarjeta">
+		<div class="titulo">
+			<h3>
+				Para todos, desde <br /> emprendedores hasta <br /> empresas
+			</h3>
+			<p>
+				Millones de comerciantes de todos los tamaños han <br /> generado
+				colectivamente US$1.000.000.000.000 en ventas en Shopify.
+			</p>
 		</div>
-		<button>Elige un plan que se adapte a tus necesidades</button>
+		<div class="tarjetaboton">
+			<div class="tarjetaindex">
+				<TarjetaIndex
+					title="Comienza con rapidez "
+					description=" Megan Bre Camp, vendedora en solitario, puso en marcha Summer Solace Tallow para vender sus velas y productos para el cuidado de la piel orgánicos tanto online como en mercados locale"
+					imgURL="/4ce35eba1e546a23ff875c3eba8b5705.avif"
+				/>
+				<TarjetaIndex
+					title="Crece todo lo que quieras "
+					description=" La marca de atletismo Gymshark pasó de trabajar en un garaje a convertirse en la empresa mundial que es hoy, con más de US$500 millones en ventas anuales."
+					imgURL="/2083b4178afc5db338c7d6081f8a5838.webp"
+				/>
+				<TarjetaIndex
+					title="Aumenta tus expectativas "
+					description=" Con la ayuda de Shopify para empresas, Mattel vende sus icónicos juguetes directamente a clientes en todo el mundo."
+					imgURL="/7c3d68ca99f2f743df8cb1187bbd2cb1.webp"
+				/>
+			</div>
+
+			<button class="tarjetaboton"
+				>Elige un plan que se adapte a tus necesidades</button
+			>
+		</div>
 	</div>
 </Layout>
+
+<style>
+	p {
+		color: gray;
+	}
+	div.tarjeta {
+		display: flex;
+		flex-direction: column;
+		gap: 48px;
+		background-color: #02090a;
+		color: white;
+		padding: 36px;
+	}
+	div.titulo {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0px 64px;
+	}
+	div.tarjetaindex {
+		display: flex;
+		align-items:;
+		justify-content: space-between;
+		gap: 24px;
+		padding: 0px 48px;
+	}
+	div.tarjetaboton {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 36px;
+	}
+	button.tarjetaboton {
+		padding: 12px;
+		color: white;
+		background-color: transparent;
+		border: solid 2px;
+		border-radius: 30px;
+		font-weight: 700;
+	}
+</style>

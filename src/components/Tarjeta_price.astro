@@ -1,32 +1,43 @@
 ---
 interface Props {
-
-    planname: string; 
-    description: string; 
+    planname: string;
+    description: string;
     price: string;
 }
 
-const { planname, description, price } = Astro.props
+const { planname, description, price } = Astro.props;
 ---
-<div>
+
+<div class="tarjeta">
     <p>USD 1 al mes</p>
     <div>
         <div>
-            <h1>{ planname }</h1>
+            <h1>{planname}</h1>
             <p>Mas Popular</p>
         </div>
-        <p>{ description }</p>
+        <p>{description}</p>
 
         <p>A partir de</p>
-        <h2>{ price }</h2>
+        <h2>{price}</h2>
     </div>
     <div>
-        <ul>
-            <li>Primera lista</li>
-        </ul>
-        <ul>
-            <li>Segunda lista</li>
-        </ul>
+        <slot />
         <button>Prueba Gratis</button>
     </div>
 </div>
+<style>
+    div.tarjeta {
+        background-color: bisque;
+        border: solid 1px;
+        border-radius: 24px;
+        padding: 12px;
+    }
+    button {
+        padding: 12px;
+        border-radius: 30px;
+        background-color: black;
+        color: white;
+        border: transparent 2px;
+        font-weight: 700;
+    }
+</style>

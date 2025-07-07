@@ -9,59 +9,94 @@ import Layout from "../layouts/Layout.astro";
     <JumpbotronPrice
         titulo="Comienza gratis y, luego, disfruta de por USD 1 al mes por 3 meses"
         subtitulo="Elige el mejor plan para tu negocio. Cambia de plan a medida que crezcas."
-    />
-    <div>
-        <TarjetaPrice 
-            planname="Plan Basico" 
-            description="Para emprededores individuales" 
+    >
+        <p>PLANES Y PRECIOS</p></JumpbotronPrice
+    >
+    <div class="tarjetaprice">
+        <!--FALTA UNA LISTA EN CADA COMPONENTE -->
+        <TarjetaPrice
+            planname="Plan Basico"
+            description="Para emprededores individuales"
             price="USD 10"
         />
         <TarjetaPrice
-            planname="Plan Avanzado" 
-            description="Para negocios a escala" 
+            planname="Plan Avanzado"
+            description="Para negocios a escala"
             price="USD 20"
         />
-        <TarjetaPrice 
-            planname="Plan Plus" 
-            description="Para negocios complejos" 
+        <TarjetaPrice
+            planname="Plan Plus"
+            description="Para negocios complejos"
             price="USD 30"
         />
+         <TarjetaPrice
+            planname="Plan ExtraPlus"
+            description="Para negocios complejos"
+            price="USD 50"
+        />
     </div>
-    <h1>Qué ofrece cada plan</h1>
-    <div>
-        <!-- imgURL= "/uil--trophy.svg" -->
-        <TarjetaPriceVen
-        iconName="logos:windi-css"
-        subtitulo="La mejor experiencia de pago del mundo"
-        descrition="El proceso de pago en Shopify convierte un 15% más que otras plataformas de comercio."
-        />
-        <!-- imgURL="/uil--shopping-bag.svg" -->
-        <TarjetaPriceVen
-        iconName="logos:windi-css"
-        subtitulo="Venta en persona"
-        descrition="Vende en persona y mantén el inventario sincronizado con las ventas online, todo con Shopify POS."
-        />
-        <!-- imgURL="uil--chart-line.svg" -->
-        <TarjetaPriceVen
-        iconName="logos:windi-css"
-        subtitulo="Varios canales de venta"
-        descrition="Promociona y vende productos en Instagram, TikTok, Google y otros canales."
-        />
-        <!-- imgURL="uil--channel.svg" -->
-        <TarjetaPriceVen
-        iconName="logos:windi-css"
-        subtitulo="Informes y estadísticas detallados"
-        descrition="Accede a informes para hacer un seguimiento del rendimiento de la tienda e identificar oportunidades de optimización."
-        />
-        <!-- imgURL="/uil--apps.svg" -->
-        <TarjetaPriceVen
-        iconName="logos:windi-css"
-        subtitulo="Aplicaciones de comercio"
-        descrition="Usa aplicaciones para todo, desde el abastecimiento de productos hasta la personalización de tu tienda."
-        />
+    <div class="tarjetapriceven">
+        <h1>Qué ofrece cada plan</h1>
+        <div class="tarjetaven">
+            <!-- imgURL= "/uil--trophy.svg" -->
+            <TarjetaPriceVen
+                iconName="uil:trophy"
+                subtitulo="La mejor experiencia de pago del mundo"
+                descrition="El proceso de pago en Shopify convierte un 15% más que otras plataformas de comercio."
+            />
+            <!-- imgURL="/uil--shopping-bag.svg" -->
+            <TarjetaPriceVen
+                iconName="uil:shopping-bag"
+                subtitulo="Venta en persona"
+                descrition="Vende en persona y mantén el inventario sincronizado con las ventas online, todo con Shopify POS."
+            />
+            <!-- imgURL="uil--chart-line.svg" -->
+            <TarjetaPriceVen
+                iconName="uil:chart-line"
+                subtitulo="Varios canales de venta"
+                descrition="Promociona y vende productos en Instagram, TikTok, Google y otros canales."
+            />
+            <!-- imgURL="uil--channel.svg" -->
+            <TarjetaPriceVen
+                iconName="uil:channel"
+                subtitulo="Informes y estadísticas detallados"
+                descrition="Accede a informes para hacer un seguimiento del rendimiento de la tienda e identificar oportunidades de optimización."
+            />
+            <!-- imgURL="/uil--apps.svg" -->
+            <TarjetaPriceVen
+                iconName="uil:apps"
+                subtitulo="Aplicaciones de comercio"
+                descrition="Usa aplicaciones para todo, desde el abastecimiento de productos hasta la personalización de tu tienda."
+            />
+        </div>
     </div>
     <JumpbotronPrice
         titulo="Todo lo que necesitas para vender online, en un solo lugar"
         subtitulo="Ya sea que quieras crear un sitio web, gestionar inventario o responder a tus clientes, hazlo todo con Shopify."
     />
 </Layout>
+
+<style>
+    div.tarjetaprice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 36px;
+    }
+    div.tarjetapriceven{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        padding: 12px;
+    }
+    div.tarjetaven{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 48px 120px;
+    }
+</style>
