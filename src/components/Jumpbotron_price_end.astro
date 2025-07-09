@@ -7,7 +7,6 @@ const { titulo, subtitulo } = Astro.props;
 ---
 
 <div class="jumpbotron">
-    <p class="titulo">PLANES Y PRECIOS</p>
     <div class="titulo">
       <!--ARREGLAR ESTOS TITULOS PARA QUE SE VEA MEJOR -->  
         <h1>{titulo}</h1>
@@ -34,8 +33,8 @@ const { titulo, subtitulo } = Astro.props;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background: #def3ff;
-        background: radial-gradient(circle, rgba(222, 243, 255, 1) 10%, rgba(188, 232, 232, 1) 93%);
+        background: #32f0b7;
+        background: linear-gradient(90deg, rgba(50, 240, 183, 1) 20%, rgba(61, 235, 107, 1) 50%, rgba(50, 240, 183, 1) 80%);
         padding: 60px;
         color: black;
     }
@@ -51,6 +50,7 @@ const { titulo, subtitulo } = Astro.props;
         align-items: center;
         justify-content: center;
         gap: 12px;
+        padding: 24px 0;
     }
     form.email{
         padding: 6px;
@@ -75,24 +75,18 @@ const { titulo, subtitulo } = Astro.props;
         font-weight: 700;
     }
     p.email{
-        color: gray;
         text-align: center;
         font-size: 0.90em;
         font-weight: 400;
     }
-     p.titulo{
-        font-size: 1.2em;
-        font-weight: 500;
-    }
     h1{
         font-size: 2.5em;
-        font-weight: 400;
+        font-weight: 500;
         text-align: center;
     }  
     h2{
         font-size: 1.2em;
-        font-weight: 300;
+        font-weight: 400;
         text-align: center;
-        color: gray;
     }
 </style>
