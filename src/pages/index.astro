@@ -2,7 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import Jumpbotron from "../components/Jumpbotron.astro";
 import TarjetaIndex from "../components/Tarjeta_index.astro";
-import TarjetaIndexGen from "../components/Tarjeta_index_gen.astro";
+import TarjetaIndexGen1 from "../components/Tarjeta_index_gen.astro";
+import TarjetaIndexGen2 from "../components/Tarjeta_index_gen2.astro";
+import TarjetaIndexGen3 from "../components/Tarjeta_index_gen3.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -12,6 +14,7 @@ import TarjetaIndexGen from "../components/Tarjeta_index_gen.astro";
 	<Jumpbotron />
 	<div class="tarjeta">
 		<div class="tarjetagen">
+			<!--PARRAFOS PARA LOS SALTOS DE LINEAS -->
 			<div class="titulo">
 				<h3>
 					Para todos, desde <br /> emprendedores hasta <br /> empresas
@@ -61,18 +64,18 @@ import TarjetaIndexGen from "../components/Tarjeta_index_gen.astro";
 				<div class="img">
 					<img src="/8c8ce0cb1790bd744fcfa1d0ad675ad6.webp" />
 				</div>
-				<div class="tarjetaindexgen">
-					<TarjetaIndexGen
+				<div class="tarjetaindex">
+					<TarjetaIndexGen1
 						title="Punto de venta en persona"
 						description="Vende en persona y mantén las ventas offline y online sincronizadas con Shopify POS."
 						imgURL="/d506d9f3e87f513278c8e00794dbf8dd.webp"
 					/>
-					<TarjetaIndexGen
+					<TarjetaIndexGen1
 						title="Publica en distintos canales"
 						description="Aparece en los lugares en los que los compradores se desplazan, buscan y compran con la integración multicanal."
 						imgURL="/5e17044de49f1e14cd6aa62f77e3f32f.webp"
 					/>
-					<TarjetaIndexGen
+					<TarjetaIndexGen1
 						title="Con la mejor tecnología de pago del mundo"
 						description="Shopify Checkout es rápido, totalmente personalizable y optimizado para concretar más ventas."
 						imgURL="/descarga.png"
@@ -87,13 +90,13 @@ import TarjetaIndexGen from "../components/Tarjeta_index_gen.astro";
 					<h3>Encuentra a tus clientes <br />más leales</h3>
 				</div>
 			</div>
-			<div class="tarjetaindexgen">
-				<TarjetaIndexGen
+			<div class="tarjetaindex">
+				<TarjetaIndexGen2
 					title="Llega a los clientes adecuados por menos"
 					description="Atrae nuevos clientes y haz que vuelvan por más con herramientas de marketing integradas e Informes y estadísticas útiles."
 					imgURL="/b911e9598e791eefb3bac79645c382d2.webp"
 				/>
-				<TarjetaIndexGen
+				<TarjetaIndexGen2
 					title="Impulsa el crecimiento con B2B"
 					description="Crea experiencias personalizadas para compradores mayoristas con fijación de precios, descuentos y condiciones de pago flexibles."
 					imgURL="/0aadc9a959a2ca1cbb15fed83f7dc9cd.webp"
@@ -108,8 +111,8 @@ import TarjetaIndexGen from "../components/Tarjeta_index_gen.astro";
 				</div>
 			</div>
 			<!--FALTA IMAGEN -->
-			<div class="tarjetaindexgen">
-				<TarjetaIndexGen 
+			<div class="tarjetaindex">
+				<TarjetaIndexGen3
 				title="Vende y realiza envíos a todas partes" 
 				description="Shopify reduce la complejidad de las ventas internacionales, con entregas de productos más rápidas y asequibles, así como con la localización de tu experiencia con Shopify Markets." 
 				imgURL="/41892431.png" 
@@ -123,13 +126,13 @@ import TarjetaIndexGen from "../components/Tarjeta_index_gen.astro";
 					<h3>Cuida tu negocio</h3>
 				</div>
 			</div>
-			<div class="tarjetaindexgen">
-				<TarjetaIndexGen 
+			<div class="tarjetaindex">
+				<TarjetaIndexGen2 
 				title="Gestiona todo en un solo lugar" 
 				description="Desde la oficina administrativa hasta la tienda, siempre tendrás el poder con el panel de control de Shopify totalmente centralizado." 
 				imgURL="/as4f56ascz.png" 
 				/>
-				<TarjetaIndexGen 
+				<TarjetaIndexGen2
 				title="Gestiona tu tienda desde cualquier lugar" 
 				description="Haz todo desde tu bolsillo con la completa aplicación móvil de Shopify." 
 				imgURL="/as874c98sd4gjyr.png" 
@@ -179,8 +182,9 @@ import TarjetaIndexGen from "../components/Tarjeta_index_gen.astro";
 	}
 	div.tarjetaindex {
 		display: flex;
+		flex-wrap: wrap;
 		align-items:;
-		justify-content: space-between;
+		justify-content: center;
 		gap: 24px;
 	}
 	div.tarjetaboton {
@@ -203,12 +207,6 @@ import TarjetaIndexGen from "../components/Tarjeta_index_gen.astro";
 		flex-direction: column;
 		gap: 48px;
 		padding: 36px 0 0;
-	}
-	div.tarjetaindexgen {
-		display: flex;
-		align-items:;
-		justify-content: space-between;
-		gap: 24px;
 	}
 	div.tarjetagen {
 		display: flex;

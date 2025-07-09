@@ -31,7 +31,18 @@ const { planname, description, price } = Astro.props;
     
 </div>
 <style>
-     p{ 
+    div.tarjeta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(247, 241, 233);
+        border: solid 1px;
+        border-color: rgb(194, 188, 188);
+        border-radius: 15px;
+        padding: 16px;
+        flex-basis: 400px;
+    }
+    p{ 
         font-size: 0.90em;
         font-weight: 500;
     }
@@ -62,6 +73,7 @@ const { planname, description, price } = Astro.props;
     div.plan{
         display: flex;
         flex-direction: column;
+        flex-grow: 1;
         align-items: start;
         justify-content: start;
         padding:0 0 36px ;
@@ -70,17 +82,6 @@ const { planname, description, price } = Astro.props;
         display: flex;
         align-items:center;
         justify-content: space-around;
-    }
-    div.tarjeta {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgb(247, 241, 233);
-        border: solid 1px;
-        border-color: rgb(194, 188, 188);
-        border-radius: 15px;
-        padding: 16px;
-        width: 24em;
     }
     
     button {
@@ -91,5 +92,6 @@ const { planname, description, price } = Astro.props;
         border: transparent 2px;
         font-weight: 700;
         font-size: 1em;
+        
     }
 </style>

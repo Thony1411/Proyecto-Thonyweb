@@ -162,8 +162,9 @@ import Layout from "../layouts/Layout.astro";
     }
     div.tarjetaprice{
     display: flex;
-    align-items: start;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
     gap: 12px;
     padding: 24px 18px;
     
@@ -181,7 +182,8 @@ import Layout from "../layouts/Layout.astro";
     }
     div.tarjetaven{
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
+        align-items: start;
         justify-content: space-between;
         gap: 24px;
         padding: 48px 120px;

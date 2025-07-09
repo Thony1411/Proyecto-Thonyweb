@@ -13,7 +13,7 @@ interface Props {
 const { subtitulo, descrition, iconName } = Astro.props;
 ---
 
-<div>
+<div class="tarjeta">
     <!-- <img src={imgURL} /> -->
     <Icon name={iconName} />
     <div>
@@ -21,3 +21,8 @@ const { subtitulo, descrition, iconName } = Astro.props;
         <p>{descrition}</p>
     </div>
 </div>
+<style>
+    .tarjeta{
+        width: 12em;
+    }
+</style>
