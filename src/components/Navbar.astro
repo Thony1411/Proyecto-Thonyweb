@@ -3,7 +3,9 @@ import { Icon } from "astro-icon/components";
 ---
 
 <header>
-    <nav class="barra">
+    
+</header>
+<nav class="barra">
         <div class="logo">
             <a href="/"
                 ><Icon name="logos:shopify" width="56" height="56" />
@@ -19,9 +21,17 @@ import { Icon } from "astro-icon/components";
             <button class="gratis">Comienza Gratis</button>
         </div>
     </nav>
-</header>
 
 <style>
+    nav {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        border-bottom: solid 2px;
+        border-color: rgb(190, 190, 190);
+    }
     .logo {
         display: flex;
         align-items: center;
