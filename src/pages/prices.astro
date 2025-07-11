@@ -7,186 +7,212 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    <JumpbotronPrice
-        titulo="Comienza gratis y, luego, disfruta de por USD 1 al mes por 3 meses"
-        subtitulo="Elige el mejor plan para tu negocio. Cambia de plan a medida que crezcas."
-    />
-    <div class="tarjetaprice">
-        <!--FALTA UNA LISTA EN CADA COMPONENTE -->
-        <TarjetaPrice
-            planname="Basic"
-            description="Para emprededores individuales"
-            price="USD 19"
-        >
-        <div class="lista">
-            <h6>Tarifas de tarjetas a partir de</h6>
-            <ul>
-                <li>3.5 % + $3.00 MXN online</li>
-                <li>2 % proveedores de pagos externos</li>
-            </ul>
-        </div>
-        <div>
+    <div class="content">
+        <JumpbotronPrice
+            titulo="Comienza gratis y, luego, disfruta de por USD 1 al mes por 3 meses"
+            subtitulo="Elige el mejor plan para tu negocio. Cambia de plan a medida que crezcas."
+        />
 
-        </div>
-        <h6>Funciones destacadas</h6>
-        <ul>
-            <li>10 sucursales de inventario</li>
-            <li>Atención al cliente personalizada mediante chat</li>
-            <li>Venta en persona por teléfono o con un dispositivo POS</li>
-        </ul>
-        </TarjetaPrice>
-        <TarjetaPrice
-            planname="Grow"
-            description="Para negocios a escala"
-            price="USD 52"
-        >
-        <div class="lista">
-            <h6>Tarifas de tarjetas a partir de</h6>
-            <ul>
-                <li>3.4 % + $3.00 MXN online</li>
-                <li>1 % proveedores de pagos externos</li>
-            </ul>
-        </div>
-        <div class="lista">
-            <h6>Funciones destacadas</h6>
-            <ul>
-                <li>10 sucursales de inventario</li>
-                <li>Atención al cliente personalizada mediante chat</li>
-                <li>5 cuentas para empleados adicionales</li>
-                <li>Venta en persona por teléfono o con un dispositivo POS</li>
-            </ul>
-        </div>
+        <div class="tarjetaprice">
+            <TarjetaPrice
+                planname="Basic"
+                description="Para emprededores individuales"
+                price="USD 19"
+            >
+                <div class="lista">
+                    <h6>Tarifas de tarjetas a partir de</h6>
+                    <ul>
+                        <li>3.5 % + $3.00 MXN online</li>
+                        <li>2 % proveedores de pagos externos</li>
+                    </ul>
+                </div>
+                <div></div>
+                <h6>Funciones destacadas</h6>
+                <ul>
+                    <li>10 sucursales de inventario</li>
+                    <li>Atención al cliente personalizada mediante chat</li>
+                    <li>
+                        Venta en persona por teléfono o con un dispositivo POS
+                    </li>
+                </ul>
             </TarjetaPrice>
-        <TarjetaPrice
-            planname="Advanced"
-            description="Para negocios complejos"
-            price="USD 399"
-        >
-        <div class="lista">
-            <h6>Tarifas de tarjetas a partir de</h6>
-            <ul>
-                <li>3.3 % + $3.00 MXN online</li>
-                <li>0.6 % proveedores de pagos externos</li>
-            </ul>
-        </div>
-        <div class="lista">
-            <h6>Funciones destacadas</h6>
-            <ul>
-                <li>10 sucursales de inventario</li>
-                <li>Atención al cliente personalizada mediante chat mejorada</li>
-                <li>Tiendas online locales por mercado</li>
-                <li>15 cuentas para empleados adicionales</li>
-                <li>Venta en persona por teléfono o con un dispositivo POS</li>
-            </ul>
-        </div>
+            <TarjetaPrice
+                planname="Grow"
+                description="Para negocios a escala"
+                price="USD 52"
+            >
+                <div class="lista">
+                    <h6>Tarifas de tarjetas a partir de</h6>
+                    <ul>
+                        <li>3.4 % + $3.00 MXN online</li>
+                        <li>1 % proveedores de pagos externos</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <h6>Funciones destacadas</h6>
+                    <ul>
+                        <li>10 sucursales de inventario</li>
+                        <li>Atención al cliente personalizada mediante chat</li>
+                        <li>5 cuentas para empleados adicionales</li>
+                        <li>
+                            Venta en persona por teléfono o con un dispositivo
+                            POS
+                        </li>
+                    </ul>
+                </div>
             </TarjetaPrice>
-         <TarjetaPrice
-            planname="Plus"
-            description="Para negocios complejos"
-            price="USD 2,399"
-        >
-        <div class="lista">
-            <h6>Recargos por el uso de tarjetas</h6>
-            <ul>
-                <li>Venta en persona por teléfono o con un dispositivo POS</li>
-            </ul>
-        </div>
-        <div class="lista">
-            <h6>Funciones destacadas</h6>
-            <ul>
-                <li>200 sucursales de inventario</li>
-                <li>Atención telefónica al cliente prioritaria ininterrumpida</li>
-                <li>Tiendas online locales por mercado</li>
-                <li>Número ilimitado de cuentas para empleados</li>
-                <li>Pago de gran volumen totalmente personalizable</li>
-                <li>Hasta 200 ubicaciones POS Pro</li>
-                <li>Ventas mayoristas/B2B</li>
-            </ul>
-        </div>
+            <TarjetaPrice
+                planname="Advanced"
+                description="Para negocios complejos"
+                price="USD 399"
+            >
+                <div class="lista">
+                    <h6>Tarifas de tarjetas a partir de</h6>
+                    <ul>
+                        <li>3.3 % + $3.00 MXN online</li>
+                        <li>0.6 % proveedores de pagos externos</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <h6>Funciones destacadas</h6>
+                    <ul>
+                        <li>10 sucursales de inventario</li>
+                        <li>
+                            Atención al cliente personalizada mediante chat
+                            mejorada
+                        </li>
+                        <li>Tiendas online locales por mercado</li>
+                        <li>15 cuentas para empleados adicionales</li>
+                        <li>
+                            Venta en persona por teléfono o con un dispositivo
+                            POS
+                        </li>
+                    </ul>
+                </div>
             </TarjetaPrice>
+            <TarjetaPrice
+                planname="Plus"
+                description="Para negocios complejos"
+                price="USD 2,399"
+            >
+                <div class="lista">
+                    <h6>Recargos por el uso de tarjetas</h6>
+                    <ul>
+                        <li>
+                            Venta en persona por teléfono o con un dispositivo
+                            POS
+                        </li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <h6>Funciones destacadas</h6>
+                    <ul>
+                        <li>200 sucursales de inventario</li>
+                        <li>
+                            Atención telefónica al cliente prioritaria
+                            ininterrumpida
+                        </li>
+                        <li>Tiendas online locales por mercado</li>
+                        <li>Número ilimitado de cuentas para empleados</li>
+                        <li>Pago de gran volumen totalmente personalizable</li>
+                        <li>Hasta 200 ubicaciones POS Pro</li>
+                        <li>Ventas mayoristas/B2B</li>
+                    </ul>
+                </div>
+            </TarjetaPrice>
+        </div>
+        <div class="tarjetapriceven">
+            <h1>Qué ofrece cada plan</h1>
+            <div class="tarjetaven">
+                <!-- imgURL= "/uil--trophy.svg" -->
+                <TarjetaPriceVen
+                    iconName="uil:trophy"
+                    subtitulo="La mejor experiencia de pago del mundo"
+                    descrition="El proceso de pago en Shopify convierte un 15% más que otras plataformas de comercio."
+                />
+                <!-- imgURL="/uil--shopping-bag.svg" -->
+                <TarjetaPriceVen
+                    iconName="uil:shopping-bag"
+                    subtitulo="Venta en persona"
+                    descrition="Vende en persona y mantén el inventario sincronizado con las ventas online, todo con Shopify POS."
+                />
+                <!-- imgURL="uil--chart-line.svg" -->
+                <TarjetaPriceVen
+                    iconName="uil:channel"
+                    subtitulo="Varios canales de venta"
+                    descrition="Promociona y vende productos en Instagram, TikTok, Google y otros canales."
+                />
+                <!-- imgURL="uil--channel.svg" -->
+                <TarjetaPriceVen
+                    iconName="uil:chart-line"
+                    subtitulo="Informes y estadísticas detallados"
+                    descrition="Accede a informes para hacer un seguimiento del rendimiento de la tienda e identificar oportunidades de optimización."
+                />
+                <!-- imgURL="/uil--apps.svg" -->
+                <TarjetaPriceVen
+                    iconName="uil:apps"
+                    subtitulo="Aplicaciones de comercio"
+                    descrition="Usa aplicaciones para todo, desde el abastecimiento de productos hasta la personalización de tu tienda."
+                />
+            </div>
+        </div>
+        <JumpbotronPriceEnd
+            titulo="Todo lo que necesitas para vender online, en un solo lugar"
+            subtitulo="Ya sea que quieras crear un sitio web, gestionar inventario o responder a tus clientes, hazlo todo con Shopify."
+        />
     </div>
-    <div class="tarjetapriceven">
-        <h1>Qué ofrece cada plan</h1>
-        <div class="tarjetaven">
-            <!-- imgURL= "/uil--trophy.svg" -->
-            <TarjetaPriceVen
-                iconName="uil:trophy"
-                subtitulo="La mejor experiencia de pago del mundo"
-                descrition="El proceso de pago en Shopify convierte un 15% más que otras plataformas de comercio."
-            />
-            <!-- imgURL="/uil--shopping-bag.svg" -->
-            <TarjetaPriceVen
-                iconName="uil:shopping-bag"
-                subtitulo="Venta en persona"
-                descrition="Vende en persona y mantén el inventario sincronizado con las ventas online, todo con Shopify POS."
-            />
-            <!-- imgURL="uil--chart-line.svg" -->
-            <TarjetaPriceVen
-                iconName="uil:chart-line"
-                subtitulo="Varios canales de venta"
-                descrition="Promociona y vende productos en Instagram, TikTok, Google y otros canales."
-            />
-            <!-- imgURL="uil--channel.svg" -->
-            <TarjetaPriceVen
-                iconName="uil:channel"
-                subtitulo="Informes y estadísticas detallados"
-                descrition="Accede a informes para hacer un seguimiento del rendimiento de la tienda e identificar oportunidades de optimización."
-            />
-            <!-- imgURL="/uil--apps.svg" -->
-            <TarjetaPriceVen
-                iconName="uil:apps"
-                subtitulo="Aplicaciones de comercio"
-                descrition="Usa aplicaciones para todo, desde el abastecimiento de productos hasta la personalización de tu tienda."
-            />
-        </div>
-    </div>
-    <JumpbotronPriceEnd
-        titulo="Todo lo que necesitas para vender online, en un solo lugar"
-        subtitulo="Ya sea que quieras crear un sitio web, gestionar inventario o responder a tus clientes, hazlo todo con Shopify."
-    />
 </Layout>
 
 <style>
-    h6{
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 60px;
+    }
+    h6 {
         font-size: 1em;
         font-weight: 400;
     }
-    li{
+    li {
         list-style: square;
         list-style-position:;
         font-size: 1em;
         color: rgb(110, 109, 109);
     }
-    ul{
+    ul {
         padding: 0 24px;
     }
-    div.tarjetaprice{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: center;
-    gap: 12px;
-    padding: 24px 18px;
-    
+    div.tarjetaprice {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+        gap: 12px;
+        padding: 24px 0px;
     }
-    div.lista{
-        padding: 0 ;
+    div.lista {
+        padding: 0;
     }
-    div.tarjetapriceven{
+    div.tarjetapriceven {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 24px;
+        gap: 48px;
         padding: 12px;
     }
-    div.tarjetaven{
+    div.tarjetaven {
         display: flex;
         flex-wrap: wrap;
-        align-items: start;
-        justify-content: space-between;
-        gap: 24px;
-        padding: 48px 120px;
+        align-items: stretch;
+        justify-content: center;
+        gap: 30px;
     }
-
+    h1 {
+        font-size: 3.2em;
+        font-weight: 400;
+        text-align: center;
+        line-height: 0.9em;
+    }
 </style>

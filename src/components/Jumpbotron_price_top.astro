@@ -70,30 +70,23 @@ const { titulo, subtitulo } = Astro.props;
 
         transition: border 0.6s ease-in;
         transition: border-color 0.3s ease-in;
-        transition: border-radius 0.3s ease-in;
     }
-    form:focus-within{
-        border: solid 2px;
-        border-color: blue;
-        border-radius: 30px;
-    }
-    input.boton:hover{
-        opacity: 0.8;
-    }
-    input.email{
+input.email{
         background-color: transparent;
         width: 600px;
         padding: 6px;
         color: black;
+        font-size: 1em;
     }
     input.boton{
         background-color: black;
         color: white;
-        padding: 18px;
+        padding: 16px;
         border: transparent 2px;
         border-radius: 30px;
+        font-size: 1em;
         font-weight: 700;
-
+        
         transition: opacity 0.3s ease-in;
     }
     p.email{
@@ -104,7 +97,7 @@ const { titulo, subtitulo } = Astro.props;
         line-height: 0.30em;
     }
      p.titulo{
-        font-size: 1.1em;
+         font-size: 1.1em;
         font-weight: 500;
     }
     .titulojump{
@@ -119,4 +112,11 @@ const { titulo, subtitulo } = Astro.props;
         text-align: center;
         color: gray;
     }
-</style>
+    form:focus-within{
+        border: solid 2px;
+        border-color: blue;
+    }
+    input.boton:hover{
+        opacity: 0.8;
+    }
+    </style>

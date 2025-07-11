@@ -15,14 +15,44 @@ const { subtitulo, descrition, iconName } = Astro.props;
 
 <div class="tarjeta">
     <!-- <img src={imgURL} /> -->
-    <Icon name={iconName} />
-    <div>
+    <div class="icon"><Icon name={iconName} width="32" height=32"/></div>
+    <div class="text">
         <p>{subtitulo}</p>
-        <p>{descrition}</p>
+        <p class="description">{descrition}</p>
     </div>
 </div>
 <style>
     .tarjeta{
-        width: 12em;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content:sp;
+        flex-basis: 190px;
+        gap: 24px;
+        background-color: rgb(251, 251, 251);
+        box-shadow: 3px;
+        border: solid 2px;
+        border-color: rgb(190, 190, 190);
+        border-radius: 15px;
+        padding: 16px;
+    }
+    p{
+        font-size: 1.3em;
+        color: black;         
+    }
+    p.description{
+        color: rgb(94, 91, 91);
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 52px;
+        width: 52px;
+        background-color: rgba(125, 240, 255, 0.267);
+        border: solid 2px;
+        border-color: rgba(125, 240, 255, 0.418);
+        border-radius: 120px;
+        padding: 8px;
     }
 </style>
