@@ -1,11 +1,15 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <div class="jumpbotron">
     <div>
-        <p class="Titulo">Tu negocio puede ser </p>
+        <p class="Titulo">Tu negocio puede ser</p>
         <p class="Titulo">un exito rotundo</p>
     </div>
     <div class="text">
         <div>
-            <p>Sueña en grande, construye </p>
+            <p>Sueña en grande, construye</p>
             <p>rápido y llega lejos con Shopify.</p>
         </div>
         <div class="boton">
@@ -13,7 +17,10 @@
                 <button class="gratis">Comienza Gratis</button>
                 <button class="planes">Ver Planes</button>
             </div>
-            <button>Por qué creemos Shopify</button>
+            <button class="botontext">
+                <Icon name="tabler:caret-right-filled" width="32" height="32" />
+                Por qué creemos Shopify
+            </button>
         </div>
     </div>
 </div>
@@ -36,6 +43,10 @@
         flex-direction: column;
         gap: 48px;
     }
+    .botontext {
+        display: flex;
+        align-items: center;
+    }
     button {
         padding: 16px 24px;
         border-radius: 48px;
@@ -46,9 +57,20 @@
         font-size: 1.3em;
 
         transition: opacity 0.3s ease-in-out;
+        transition: text-decoration 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out;
     }
-    button:hover{
-        opacity: 0.6;
+    button:hover {
+        opacity: 0.8;
+    }
+    button.botontext:hover {
+        text-decoration: underline;
+    }
+    button.planes:hover {
+        background-color: white;
+        color: black;
+        border-color: white;
     }
     button.gratis {
         background-color: white;
@@ -57,7 +79,7 @@
     button.planes {
         border: solid 2px;
     }
-    div.botones{
+    div.botones {
         display: flex;
         align-items: center;
         gap: 16px;
@@ -67,13 +89,12 @@
         align-items: center;
         justify-content: space-between;
     }
-    .Titulo{
+    .Titulo {
         font-size: 5em;
         font-weight: 400;
     }
-    p{
+    p {
         font-size: 1.5em;
         font-weight: 400;
-        
     }
 </style>

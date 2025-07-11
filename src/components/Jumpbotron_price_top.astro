@@ -8,10 +8,11 @@ const { titulo, subtitulo } = Astro.props;
 
 <div class="jumpbotron">
     <p class="titulo">PLANES Y PRECIOS</p>
-    <div class="titulo">
-      <!--AGREGAR MAS PARRAFOS PARA LOS SALTOS DE LINEAS -->  
-        <h1>{titulo}</h1>
-        <h2>{subtitulo}</h2>
+    <div class="jump">
+        <p class="titulojump">Comienza gratis y,</p>
+        <p class="titulojump">luego, disfruta de</p>
+        <p class="titulojump">por USD 1 al mes por 3 meses</p>
+        <h2>Elige el mejor plan para tu negocio. Cambia de plan a medida que crezcas.</h2>
     </div>
     <div class="email">
         <form class="email" action="">
@@ -19,8 +20,12 @@ const { titulo, subtitulo } = Astro.props;
             <input class="boton" type="submit" value="Prueba gratis" />
         </form>
         <p class="email">
-            Prueba Shopify gratis, sin tarjeta de crédito. Al ingresar tu correo <br>
-            electrónico, aceptas recibir correos electrónicos de marketing de <br>
+            Prueba Shopify gratis, sin tarjeta de crédito. Al ingresar tu correo
+        </p>
+        <p class="email">
+            electrónico, aceptas recibir correos electrónicos de marketing de 
+        </p>
+        <p class="email">
             Shopify.
         </p>
     </div>
@@ -39,7 +44,7 @@ const { titulo, subtitulo } = Astro.props;
         padding: 60px;
         color: black;
     }
-    div.titulo{
+    div.jump{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,12 +58,27 @@ const { titulo, subtitulo } = Astro.props;
         gap: 12px;
     }
     form.email{
-        padding: 6px;
-        background-color: white;
-        border: transparent 2px;
-        border-radius: 30px;
         display: flex;
+        align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: white;
+        border: solid 2px;
+        border-color: rgb(114, 111, 108);
+        border-radius: 30px;
+        padding: 6px;
+
+        transition: border 0.6s ease-in;
+        transition: border-color 0.3s ease-in;
+        transition: border-radius 0.3s ease-in;
+    }
+    form:focus-within{
+        border: solid 2px;
+        border-color: blue;
+        border-radius: 30px;
+    }
+    input.boton:hover{
+        opacity: 0.8;
     }
     input.email{
         background-color: transparent;
@@ -73,24 +93,28 @@ const { titulo, subtitulo } = Astro.props;
         border: transparent 2px;
         border-radius: 30px;
         font-weight: 700;
+
+        transition: opacity 0.3s ease-in;
     }
     p.email{
         color: gray;
         text-align: center;
         font-size: 0.90em;
         font-weight: 400;
+        line-height: 0.30em;
     }
      p.titulo{
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: 500;
     }
-    h1{
-        font-size: 2.5em;
+    .titulojump{
+        font-size: 3.2em;
         font-weight: 400;
         text-align: center;
-    }  
+        line-height: 0.9em;
+    }
     h2{
-        font-size: 1.2em;
+        font-size: 1.3em;
         font-weight: 300;
         text-align: center;
         color: gray;

@@ -9,9 +9,9 @@ import { Icon } from "astro-icon/components";
                 ><Icon name="logos:shopify" width="56" height="56" />
             </a>
             <ul class="enlaces">
-                <li><a href="/solutions">Soluciones</a></li>
-                <li><a href="/prices">Precios</a></li>
-                <li><a href="/resources">Recursos</a></li>
+                <li><a class="text" href="/solutions">Soluciones <Icon name="tabler:caret-down-filled" width="16" height="16"/></a></li>
+                <li><a class="text" href="/prices">Precios</a></li>
+                <li><a class="text" href="/resources">Recursos <Icon name="tabler:caret-down-filled" width="16" height="16"/></a></li>
             </ul>
         </div>
         <div class="botones">
@@ -54,9 +54,18 @@ import { Icon } from "astro-icon/components";
         color: black;
     }
     button{
-        transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in;
+        transition: text-decoration 0.3s ease-in;
     }
     button:hover{
-        opacity: 0.6;
+        opacity: 0.8;
+    }
+    a.text:hover{
+        opacity: 0.9;
+        text-decoration: underline; 
+    }
+    button.login:hover{
+        opacity: 0.9;
+        text-decoration: underline; 
     }
 </style>
