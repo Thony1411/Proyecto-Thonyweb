@@ -14,8 +14,8 @@ import { Icon } from "astro-icon/components";
         </div>
         <div class="boton">
             <div class="botones">
-                <button class="gratis">Comienza Gratis</button>
-                <button class="planes">Ver Planes</button>
+                <a href="/register" class="gratis">Comienza Gratis</a>
+                <a href="/prices" class="planes">Ver Planes</a>
             </div>
             <button class="botontext">
                 <Icon name="tabler:caret-right-filled" width="32" height="32" />
@@ -47,7 +47,7 @@ import { Icon } from "astro-icon/components";
         display: flex;
         align-items: center;
     }
-    button {
+    button,a{
         padding: 16px 24px;
         border-radius: 48px;
         background-color: black;
@@ -61,22 +61,22 @@ import { Icon } from "astro-icon/components";
         transition: background-color 0.3s ease-in-out;
         transition: color 0.3s ease-in-out;
     }
-    button:hover {
+    button,a:hover {
         opacity: 0.8;
     }
     button.botontext:hover {
         text-decoration: underline;
     }
-    button.planes:hover {
+    a.planes:hover {
         background-color: white;
         color: black;
         border-color: white;
     }
-    button.gratis {
+    a.gratis {
         background-color: white;
         color: black;
     }
-    button.planes {
+    a.planes {
         border: solid 2px;
     }
     div.botones {

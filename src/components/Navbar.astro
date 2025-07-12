@@ -17,8 +17,8 @@ import { Icon } from "astro-icon/components";
             </ul>
         </div>
         <div class="botones">
-            <button class="login">Iniciar Sesion</button>
-            <button class="gratis">Comienza Gratis</button>
+            <a href="/login" class="login">Iniciar Sesion</a>
+            <a href="/register" class="gratis">Comienza Gratis</a>
         </div>
     </nav>
 
@@ -54,7 +54,7 @@ import { Icon } from "astro-icon/components";
 
         transition: text-decoration 0.3s ease-in;
     }
-    .botones button{
+    .botones a{
         font-size: 1em;
         font-weight: 700;
         background-color: black;
@@ -63,25 +63,22 @@ import { Icon } from "astro-icon/components";
         border: transparent 2px;
         padding: 12px;
     }
-    .botones button.login {
+    .botones a.login {
         background-color: white;
         color: rgb(55, 55, 55);
         transition: text-decoration 0.3s ease-in;
     }
-    button{
-        
-    }
-    button.gratis{
+    a.gratis{
         transition: opacity 0.3s ease-in;
         transition: text-decoration 0.3s ease-in;
     }
-    button.gratis:hover{
+    a.gratis:hover{
         opacity: 0.8;
     }
     a.text:hover{
         text-decoration: underline; 
     }
-    button.login:hover{
+    a.login:hover{
         text-decoration: underline; 
     }
 </style>
