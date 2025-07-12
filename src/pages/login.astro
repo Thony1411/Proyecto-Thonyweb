@@ -1,0 +1,235 @@
+---
+import { Icon } from "astro-icon/components";
+import "../styles/global.css";
+---
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Iniciar sesión</title>
+</head>
+<body>
+    <div class="login">
+        <div class="flex">
+            <Icon name="logos:shopify" width="56" height="56" />
+            <div>
+                <p>Iniciar sesión</p>
+                <p class="subtitulo">Continúa a Shopify</p>
+            </div>
+        </div>
+        <div class="flex-email">
+            <form action="">
+                <label for="">Correo electrónico</label>
+                <input type="email" class="email" />
+                <input
+                    type="submit"
+                    class="boton"
+                    value="Continuar con el correo electrónico"
+                />
+            </form>
+            <a class="boton" href=""
+                ><Icon
+                    name="tabler:user-shield"
+                    width="24"
+                    height="24"
+                />Iniciar sesión con clave de acceso
+            </a>
+        </div>
+        <div class="flex">
+            <div class="botones">
+                <a href="" class="enlaces"
+                    ><Icon name="logos:apple" width="32" height="32" /></a
+                >
+                <a href="" class="enlaces"
+                    ><Icon name="logos:facebook" width="32" height="32" /></a
+                >
+                <a href="" class="enlaces"
+                    ><Icon name="logos:google-icon" width="32" height="32" /></a
+                >
+            </div>
+            <div class="enlace">
+                <p class="enlace">¿Eres nuevo/a en Shopify?</p>
+                <a class="enlace" href="/register"
+                    >Comenzar<Icon
+                        name="tabler:arrow-narrow-right"
+                        width="24"
+                        height="24"
+                    /></a
+                >
+            </div>
+        </div>
+        <div class="enlace">
+            <a href="" class="end">Ayuda</a>
+            <a href="" class="end">Privacidad</a>
+            <a href="" class="end">Términos</a>
+        </div>
+    </div>
+</body>
+
+<style>
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background: #1c177a;
+        background: linear-gradient(
+            45deg,
+            rgba(28, 23, 122, 1) 0%,
+            rgba(92, 92, 255, 1) 35%,
+            rgba(4, 116, 192, 1) 69%,
+            rgba(0, 212, 255, 1) 100%
+        );
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .login {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+        gap: 24px;
+        background-color: white;
+        border: solid 2px rgb(207, 207, 207);
+        border-radius: 12px;
+        padding: 36px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items:;
+        gap: 24px;
+    }
+    .flex-email {
+        display: flex;
+        flex-direction: column;
+        align-items:;
+        gap: 12px;
+    }
+    p {
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .subtitulo {
+        font-size: 1.1em;
+        font-weight: 400;
+        color: gray;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    label {
+        font-size: 1.1em;
+        font-weight: 500;
+        color: gray;
+    }
+    input.email {
+        font-size: 1em;
+        width: 100%;
+        height: 2.2em;
+        border: solid 1px black;
+        border-radius: 8px;
+        padding: 8px;
+
+        transition: border 0.1s ease-in;
+    }
+    input.boton {
+        font-size: 0.9em;
+        font-weight: 600;
+        color: white;
+        background-color: rgb(75, 75, 75);
+        border: transparent 1px;
+        border-radius: 8px;
+        padding: 16px;
+
+        transition: background-color 0.2s ease-in;
+    }
+    a.boton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        font-weight: 600;
+        color: gray;
+        gap: 8px;
+        border: transparent 1px;
+        border-radius: 8px;
+        padding: 12px;
+
+        transition: background-color 0.2s ease-in;
+    }
+    div.botones {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-top: solid 2px rgb(211, 211, 211);
+        padding: 24px;
+    }
+    a.enlaces {
+        display: flex;
+        justify-content: center;
+        flex-basis: 96px;
+        border: transparent 1px;
+        border-radius: 8px;
+        background-color: rgb(230, 230, 230);
+        padding: 12px;
+
+        transition: opacity 0.2s ease-in;
+    }
+    p.enlace {
+        font-size: 1em;
+        font-weight: 500;
+        color: gray;
+    }
+    a.enlace {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        font-weight: 500;
+        color: rgb(4, 0, 255);
+        gap: 2px;
+
+        transition: text-decoration 0.2s ease-in;
+    }
+    div.enlace {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    a.end {
+        font-size: 0.8em;
+        font-weight: 500;
+        color: gray;
+
+        transition: text-decoration 0.2s ease-in;
+    }
+
+    a.enlaces:hover {
+        opacity: 0.6;
+    }
+    a.enlace:hover {
+        text-decoration: underline;
+    }
+    a.boton:hover {
+        background-color: rgb(235, 235, 235);
+    }
+    a.end:hover {
+        text-decoration: underline;
+    }
+    input.boton:hover {
+        background-color: rgb(30, 30, 30);
+    }
+    input.email:focus {
+        border: solid 2px blue;
+    }
+</style>
