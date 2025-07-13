@@ -1,7 +1,171 @@
 ---
+import Jumpbotron from "../components/Jumpbotron_solutions.astro";
+import TarjetaSolutions from "../components/Tarjeta_solutions.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    Esta es la ruta de Soluciones
+    <Jumpbotron />
+    <div class="main">
+        <div>
+            <h2>CREADOR DE TIENDAS ONLINE</h2>
+            <h1>Crea tu tienda</h1>
+            <p>
+                Materializa tus ideas con las herramientas que necesitas para
+                empezar a vender.
+            </p>
+        </div>
+        <div>
+            <img src="deccb7654bab49d3ee3c6c60e06c7241.webp" />
+        </div>
+        <div class="tarjetas">
+            <div class="component">
+                <TarjetaSolutions
+                    title="Crea tu tienda online"
+                    description="Personaliza el diseño de tu tienda online con herramientas de arrastrar y soltar que la harán brillar."
+                    nameURL="Creador de tiendas online "
+                />
+            </div>
+            <div class="component">
+                <TarjetaSolutions
+                    title="Elige un tema para tu tienda"
+                    description="Explora una amplia variedad de temas pagos y gratuitos."
+                    nameURL="Tienda de temas "
+                />
+            </div>
+            <div class="component">
+                <TarjetaSolutions
+                    title="Mejora tu tienda con aplicaciones"
+                    description="Agrega más funciones a tu tienda con las aplicaciones confiables de Shopify Partners."
+                    nameURL="Tienda de aplicaciones de Shopify "
+                />
+            </div>
+        </div>
+        <div class="seccion">
+            <h2>HERRAMIENTAS DE PROMOCIÓN DE MARCA</h2>
+            <h1>Desarrolla tu marca</h1>
+            <p>
+                Diseña la apariencia de tu marca y ayuda a los clientes a
+                conectar con tu negocio.
+            </p>
+        </div>
+
+        <div class="tarjeta2">
+            <div class="img">
+                <img
+                    src="one-small-6f938af21afb8299c01da30683b29a4ae0afc2da7680cca6c93d056787c67fdc.webp"
+                    alt=""
+                />
+            </div>
+            <div class="text">
+                <div class="component2">
+                    <TarjetaSolutions
+                        title="Genera el nombre de tu negocio"
+                        description="Encuentra un nombre que se ajuste a tu personalidad y a tu idea de negocio."
+                        nameURL="Generador de nombres de negocios "
+                    />
+                </div>
+                <div class="component2">
+                    <TarjetaSolutions
+                        title="Crea un logo gratis"
+                        description="Destácate entre la competencia y haz que tu negocio sea inolvidable."
+                        nameURL="Generador de logos "
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="tarjeta2">
+            <div class="text">
+                <div class="component2">
+                    <TarjetaSolutions
+                        title="Obtén un dominio web personalizado"
+                        description="Establece tu negocio y permite que los clientes encuentren tu tienda online."
+                        nameURL="Generador de nombres de dominios "
+                    />
+                </div>
+                <div class="component2">
+                    <TarjetaSolutions
+                        title="Descarga fotos de stock gratis"
+                        description="Personaliza tu sitio web con imágenes gratis de alta resolución de Burst."
+                        nameURL="Explora Burst "
+                    />
+                </div>
+            </div>
+            <div class="img">
+                <img src="a221369371a983082bba4edf0873e450.webp" alt="" />
+            </div>
+        </div>
+    </div>
 </Layout>
+
+<style>
+    img {
+        width: 100%;
+        height: 250;
+        object-fit: cover;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 48px;
+        padding: 24px 84px;
+    }
+    h1 {
+        font-size: 3.3em;
+        font-weight: 400;
+    }
+    h2 {
+        font-size: 1.1em;
+        font-weight: 500;
+        color: rgb(56, 185, 147);
+    }
+    p {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: rgb(78, 76, 76);
+    }
+    .tarjetas {
+        display: flex;
+        align-items:;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    div.component {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 300px;
+        gap: 16px;
+        border-top: solid 1px rgb(78, 76, 76);
+        padding-top: 24px;
+    }
+    div.seccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .tarjeta2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-top: 24px;
+    }
+    .img {
+        width: 600px;
+    }
+    div.component2 {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        gap: 16px;
+    }
+    div.text {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+</style>

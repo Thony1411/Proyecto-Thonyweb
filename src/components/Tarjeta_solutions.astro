@@ -1,0 +1,43 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    nameURL: string;
+}
+const { title, description, nameURL} = Astro.props
+---
+<div>
+    <h3>{ title }</h3>
+    <p>{ description }</p>
+</div>
+<div>
+    <a href="">{ nameURL }</a>
+</div>
+
+<style>
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    h3 {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+    p {
+        font-size: 1.1em;
+        font-weight: 500;
+        color: rgb(124, 124, 124);
+    }
+    a {
+        font-size: 0,9em; 
+        font-weight: 500;
+        text-decoration: underline;
+
+        transition: text-decoration 0.3s ease-in;
+    }
+    a:hover {
+        text-decoration: none;
+        opacity: 0.6;
+    }
+</style>
