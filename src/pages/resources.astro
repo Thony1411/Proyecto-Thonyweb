@@ -1,8 +1,286 @@
 ---
+import { Icon } from "astro-icon/components";
 import Layout from "../layouts/Layout.astro";
+import TarjetaBlog from "../components/Tarjeta_blog.astro";
 ---
 
 <Layout>
-    
-    
+    <div class="main">
+        <div class="lado1">
+            <div class="img">
+                <div><img src="size-link-shopify-min.webp" alt="" /></div>
+            </div>
+            <div class="text">
+                <h2>EMPRENDER</h2>
+                <div class="content">
+                    <a class="titulo">
+                        Size.link ayuda a tus clientes a visualizar las
+                        dimensiones de tus productos en su propio espacio
+                    </a>
+                    <p class="description">
+                        Visualizar las dimensiones siempre ha sido un reto a la
+                        hora de transmitirlo en las páginas de productos.
+                        Descubre cómo resolverlo con Size.link.
+                    </p>
+                </div>
+                <div>
+                    <p class="by">por Shopify en español</p>
+                    <p class="fecha">19 nov 2024</p>
+                </div>
+            </div>
+        </div>
+        <div class="lado2">
+            <div class="potacio">
+                <h3>Comienza tu negocio online gratis hoy mismo.</h3>
+                <h4>
+                    Regístrate en Shopify para una prueba gratis y obtén acceso
+                    a todas las herramientas y los servicios que necesitas para
+                    comenzar, gestionar y hacer crecer tu negocio.
+                </h4>
+                <div class="boton">
+                    <a href="" class="boton">Comenzar prueba gratis</a>
+                    <p class="boton">
+                        Prueba Shopify gratis, sin tarjeta de crédito.
+                    </p>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="text2">
+                    <h2 class="categoria">SHOPIFY</h2>
+                    <a class="tituloblog">
+                        +50 tiendas Shopify para inspirarte (2025)
+                    </a>
+                    <div>
+                        <p class="by">por Shopify en español</p>
+                        <p class="fecha">26 nov 2024</p>
+                    </div>
+                </div>
+                <div class="img2">
+                    <img class="blog" src="shopify_20stores.webp" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <div class="categoria">
+            <h1 class="categoria">Más recientes</h1>
+            <a href="" class="vertodo"
+                >Ver todo <span
+                    ><Icon
+                        name="tabler:arrow-narrow-right"
+                        width="24"
+                        height="24"
+                    /></span
+                ></a
+            >
+        </div>
+        <div class="tarjetasblogs">
+            <TarjetaBlog
+                categoria="MARKETING"
+                titulo="20 blogs de marketing en español que deberías leer en 2025"
+                fecha="12 jul 2025"
+            />
+            <TarjetaBlog
+                categoria="EMPRENDER"
+                titulo="Cómo conseguir el NIF de Sociedad Limitada: guía paso a paso (2025)"
+                fecha="12 jul 2025"
+            />
+            <TarjetaBlog
+                categoria="EMPRENDER"
+                titulo="5 consejos para escribir prompts de ChatGPT efectivos (+ ejemplos)"
+                fecha="12 jul 2025"
+            />
+            <TarjetaBlog
+                categoria="EMPRENDER"
+                titulo="¿Qué es una API de ecommerce?"
+                fecha="12 jul 2025"
+            />
+        </div>
+    </div>
 </Layout>
+
+<style>
+    img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+
+        transition: transform 0.3s ease-in;
+    }
+    .img {
+        overflow: hidden;
+    }
+    .main {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 84px;
+        gap: 48px;
+    }
+    .lado1 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 500px;
+        gap: 24px;
+    }
+    h2 {
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .titulo,
+    h1 {
+        font-size: 2.5em;
+        font-weight: 400;
+        line-height: 1.1em;
+    }
+    p.description {
+        font-size: 1.3em;
+    }
+    p.by {
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+    p.fecha {
+        font-size: 0.9em;
+        font-weight: 500;
+        color: rgb(100, 100, 100);
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .potacio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        background-color: black;
+        padding: 60px;
+        gap: 12px;
+        text-align: center;
+    }
+    h3,
+    h4 {
+        font-size: 1.4em;
+        font-weight: 400;
+        line-height: 1.1;
+    }
+    h3 {
+        color: white;
+    }
+    h4 {
+        color: rgb(185, 185, 185);
+    }
+    p.boton {
+        font-size: 0.7em;
+        color: rgb(165, 165, 165);
+    }
+    a.boton {
+        font-size: 1.1em;
+        font-weight: 500;
+        color: rgb(61, 61, 61);
+        background-color: rgb(95, 211, 120);
+        border: transparent 1px;
+        border-radius: 30px;
+        padding: 8px 12px;
+    }
+    div.boton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .lado2 {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: start;
+
+        gap: 48px;
+    }
+    .blog {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        width: 500px;
+    }
+    .img2 {
+        display: flex;
+        align-items: center;
+        width: 220px;
+        height: 100%;
+        overflow: hidden;
+    }
+    .text2 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex-basis: 400px;
+    }
+    img.blog {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+    .tituloblog {
+        font-size: 1.9em;
+        font-weight: 400;
+        line-height: 1.1em;
+    }
+    div.seccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 36px;
+        background-color: rgb(240, 240, 240);
+        padding: 48px 84px;
+    }
+    div.categoria {
+        display: flex;
+        justify-content: space-between;
+    }
+    .tarjetasblogs {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-top: solid 1px rgb(150, 150, 150);
+        padding: 24px 0;
+        gap: 24px;
+    }
+    a.vertodo {
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+        gap: 6px;
+        text-decoration: underline;
+    }
+    span {
+        color: rgb(146, 146, 146);
+    }
+
+    a.vertodo:hover {
+        text-decoration: none;
+    }
+    a.boton:hover {
+        opacity: 0.8;
+    }
+    .titulo:hover {
+        text-decoration: underline;
+    }
+    .tituloblog:hover {
+        text-decoration: underline;
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
+</style>

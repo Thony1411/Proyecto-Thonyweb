@@ -1,0 +1,36 @@
+---
+interface Props {
+    categoria: string;
+    titulo: string;
+    fecha: string;
+}
+const { categoria, titulo, fecha } = Astro.props;
+---
+
+<div>
+    <a href=" " class="categoria">{categoria}</a>
+    <a href=" " class="titulo">{titulo}</a>
+    <p>{fecha}</p>
+</div>
+
+<style>
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 250px;
+    }
+    a.titulo {
+        font-size: 1.3em;
+    }
+    p {
+        color: rgb(100, 100, 100);
+    }
+
+    a.categoria:hover {
+        opacity: 0.6;
+    }
+    a.titulo:hover {
+        text-decoration: underline;
+    }
+</style>
