@@ -2,12 +2,39 @@
 interface Props {
     title: string;
     description: string;
-    imgURL: string;
+    
 }
-const { title, description, imgURL} = Astro.props
+const { title, description} = Astro.props
 ---
 <div class="tarjeta">
-    <img src={ imgURL } alt="">
+    <div class="img2">
+        <div class="img1">  
+            <div class="flags">
+               <img class="flag" src="Flag_of_Mexico.svg.webp" alt="">
+               <img class="flag" src="Bandera_de_España.svg.webp" alt="">
+               <img class="flag" src="Flag_of_the_United_States.svg.png" alt="">
+               <img class="flag" src="Flag_of_Brazil.svg.png" alt="">
+            </div>
+            <div class="card1">
+                <div class="card">
+                    <img src="71e525e01bf304a1e639d14ff4ef1855.webp" alt="">
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="375652716df8f879dbf34419c8ae0d50.avif" alt="">
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="1d40849c5137319b5f80efc99e33bff9.webp" alt="">
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div> 
+        <div class="img">
+            <img src="8ee2205e3e3d2e8a2b08db027ff73236.webp" alt="">
+        </div>   
+    </div>
+    
     <div class="text">
         <h2> { title } </h2>
         <p> { description } </p>
@@ -19,7 +46,6 @@ const { title, description, imgURL} = Astro.props
         width: 100%;
         height: 250;
         object-fit: cover;
-        transition: transform 0.3s ease-in-out;
     }
     p{
 		color: gray;
@@ -29,7 +55,7 @@ const { title, description, imgURL} = Astro.props
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        flex-basis: 400px;	
+        flex-basis: 500px;	
         flex-grow: 1;
         background-color: #061a1c;
         border-radius: 15px;
@@ -42,7 +68,66 @@ const { title, description, imgURL} = Astro.props
         flex-direction: column;
         gap: 12px;
     }
-    .tarjeta img:hover{
-         transform: scale(1.1);
+     .img1 {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+     }
+     .img2 {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+     }
+     .flags {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        gap: 12px;  
+     }
+     .flags img {
+        padding: 12px;
+        background-color: beige;
+        border: solid 1px;
+        border-radius: 10px;
+     }
+     .flag:hover{
+        transform: scale(1.1);
+    }
+    .flag {
+        transition: all 0.3s ease;
+    }
+     .card1 {
+        display: flex;
+        flex-basis: 1000px;
+        gap: 24px;
+     }
+     .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        background-color: aliceblue;
+        border: solid 1px black;
+        border-radius: 10px;
+        padding: 6px;
+     }
+     .card img {
+        padding: 12px;
+        height: 200px;
+        opacity: 0.6;
+        transition: opacity 0.3s ease-in;
+     }
+     .card button {
+        font-size: 1em;
+        padding: 8px;
+        border: transparent 1px;
+        border-radius: 20px;
+        color: white;
+        background-color: rgb(1, 82, 1);
+    }
+    .card:hover > img {
+        opacity: 1;
+    }
+    .img {
+        flex-basis: 350px;
     }
 </style>
